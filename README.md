@@ -11,3 +11,8 @@ $ sbt
 > run
 ```
 
+# List of Examples
+
+- Wikipedia wordcount sample (`> runMain io.github.tdhd.sparky.WordCount`)
+- ...
+
