@@ -1,6 +1,6 @@
 # sparky
 
-A collection of spark examples.
+A small collection of spark examples in scala for the edX course **BerkeleyX:** CS100.1x Introduction to Big Data with Apache Spark.
 
 # To run
 
