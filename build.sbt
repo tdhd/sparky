@@ -9,7 +9,9 @@ val project = Project(
                javaOptions in run ++= Seq("-Xms128m", "-Xmx1024m"),
                libraryDependencies ++= Seq(
                  "org.jsoup" % "jsoup" % "1.8.2",
-                 "org.apache.spark" % "spark-core_2.11" % "1.4.0")
+                 "org.apache.spark" % "spark-core_2.11" % "1.4.0",
+                 "org.apache.spark" % "spark-streaming_2.11" % "1.4.0",
+                 "com.typesafe.akka" %% "akka-actor" % "2.3.11")
              )
 )
 
