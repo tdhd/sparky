@@ -34,7 +34,7 @@ class DataPublisher extends Actor with ActorLogging {
     }
 
     val filename = s"file_${scala.util.Random.nextInt}.csv"
-    scala.tools.nsc.io.File(s"/tmp/crawl/$filename").writeAll(featureArticle) //appendAll(s"${scala.util.Random.nextString(10)}\n")
+    scala.tools.nsc.io.File(s"/tmp/$filename").writeAll(featureArticle) //appendAll(s"${scala.util.Random.nextString(10)}\n")
   }
 
   def receive = {

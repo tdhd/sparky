@@ -18,7 +18,7 @@ object StreamingWordCount {
     val ssc = new StreamingContext(conf, Seconds(1))
 
     // watch for new files in /tmp/crawl/
-    val lines = ssc.textFileStream("file:///tmp/crawl/")
+    val lines = ssc.textFileStream("file:///tmp/")
     val words = lines.flatMap(_.split(" "))
     // Count each word in each batch
     val pairs = words.map(word => (word, 1))
